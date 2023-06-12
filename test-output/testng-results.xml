@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-11T14:41:56 EEST" name="Default Suite" finished-at="2023-06-11T14:42:25 EEST" duration-ms="28981">
+    <groups>
+    </groups>
+    <test started-at="2023-06-11T14:41:56 EEST" name="TestNG2Jenkins" finished-at="2023-06-11T14:42:25 EEST" duration-ms="28981">
+      <class name="TestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:41:56 EEST" name="setUp" finished-at="2023-06-11T14:42:00 EEST" duration-ms="3882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loadApplication()[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:42:00 EEST" name="loadApplication" finished-at="2023-06-11T14:42:01 EEST" duration-ms="1730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadApplication -->
+        <test-method signature="testOne()[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:42:01 EEST" name="testOne" finished-at="2023-06-11T14:42:19 EEST" duration-ms="17422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method is-config="true" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:42:19 EEST" name="FailedScreenshot" finished-at="2023-06-11T14:42:19 EEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOne status=SUCCESS method=TestCases.testOne()[pri:0, instance:TestCases@56f0cc85] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method is-config="true" signature="loadApplication()[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:42:19 EEST" name="loadApplication" finished-at="2023-06-11T14:42:19 EEST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadApplication -->
+        <test-method signature="testTwo()[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:42:19 EEST" name="testTwo" finished-at="2023-06-11T14:42:24 EEST" duration-ms="5320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+        <test-method is-config="true" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:42:24 EEST" name="FailedScreenshot" finished-at="2023-06-11T14:42:24 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTwo status=SUCCESS method=TestCases.testTwo()[pri:0, instance:TestCases@56f0cc85] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases@56f0cc85]" started-at="2023-06-11T14:42:24 EEST" name="tearDown" finished-at="2023-06-11T14:42:25 EEST" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases -->
+    </test> <!-- TestNG2Jenkins -->
+  </suite> <!-- Default Suite -->
+</testng-results>
