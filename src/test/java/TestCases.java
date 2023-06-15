@@ -13,7 +13,7 @@ public class TestCases extends BaseTest {
     @Test
     public void testOne(){
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        for(int i = 0; i<=2;i++){
+        for(int i = 0; i<=3;i++){
             String j = String.valueOf(i);
             if(i==0){
                 logger.info("Open browserstack");
