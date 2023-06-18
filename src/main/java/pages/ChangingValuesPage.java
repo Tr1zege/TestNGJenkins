@@ -7,7 +7,7 @@ import java.time.Duration;
 public class ChangingValuesPage extends BasePage{
     private By dropdown = By.cssSelector("#navbarDropdown");
     private By logout = By.cssSelector("#navbarSupportedContent > ul > li.nav-item.dropdown.show > ul > li:nth-child(2) > a");
-    private By startRegisterButton = By.id("rlg-register-start");
+    private By openOrganizationDetails = By.cssSelector("#left-bar-list > li.list-group-item.border-0.filled-item.li-registration > a");
     private By tradingName = By.id("TradingName");
     public void clickDropdown(){
         click(dropdown);
@@ -17,8 +17,8 @@ public class ChangingValuesPage extends BasePage{
         click(logout);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
-    public void clickStartRegisterButton(){
-        click(startRegisterButton);
+    public void clickOpenOrganizationDetails(){
+        click(openOrganizationDetails);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
     public void selectTradingName(){
