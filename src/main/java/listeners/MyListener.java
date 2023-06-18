@@ -4,9 +4,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import pages.EligibilityPage;
-import pages.HomePage;
 
-public class MyListener extends HomePage implements ITestListener {
+public class MyListener extends EligibilityPage implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {

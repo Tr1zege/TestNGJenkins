@@ -13,29 +13,16 @@ public class TestCases extends BaseTest {
     @Test
     public void testOne(){
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        for(int i = 0; i<=3;i++){
+        for(int i = 1; i<=2;i++){
+            eligibilityPage = EligibilityPage.openElibilityPage();
             String j = String.valueOf(i);
-            if(i==0){
-                logger.info("Open browserstack");
-                eligibilityPage = homePage.openElibilityPage();
-                eligibilityPage.clickSaveButton();
-                logger.info("Confirm the agreement");
-                eligibilityPage.acceptCookies();
-                logger.info("Accept Cookies");
-            }
-            else if(i>0){
-                eligibilityPage.elseIfScenarioLink();
-                logger.info("Open browserstack");
-                eligibilityPage.clickSaveButton();
-                logger.info("Confirm the agreement");
-            }
-            loginPage.fillUsernameField();
+            loginPage.fillEmail();
             loginPage.fillPasswordField();
             logger.info("Type Username");
             logger.info("Type Password");
             js.executeScript("javascript:window.scrollBy(250,350)");
             loginPage.clickLoginButton();
-            changingValuesPage.clickStartRegisterButton();
+            changingValuesPage.clickOpenOrganizationDetails();
             changingValuesPage.selectTradingName();
             driver.findElement(By.id("TradingName")).sendKeys(j);
             changingValuesPage.clickDropdown();
@@ -47,12 +34,9 @@ public class TestCases extends BaseTest {
     public void testTwo() {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         logger.info("Open browserstack");
-        eligibilityPage = homePage.openElibilityPage();
-        eligibilityPage.clickConfirmCheckbox();
-        eligibilityPage.clickSaveButton();
-        logger.info("Confirm the agreement");
+        eligibilityPage = EligibilityPage.openElibilityPage();
 
-        loginPage.fillUsernameField();
+        loginPage.fillEmail();
         loginPage.fillPasswordField();
         logger.info("Type Username");
         logger.info("Type Password");
